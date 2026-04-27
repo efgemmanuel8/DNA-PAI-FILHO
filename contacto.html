@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Contato</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:white;
+    color: #24a4c6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+}
+
+h1 {
+    letter-spacing: 8px;
+    font-weight: 300;
+}
+
+.linha {
+    width: 250px;
+    height: 2px;
+    background: #24a4c6;
+    margin: 10px 0 40px;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #24a4c6;
+    color: #fff;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    border: blue;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.botao{
+	border:1px solid #ccc;
+	color:#24a4c6;
+	margin-left:10px;
+	letter-spacing:3px;
+	padding:10px 20px;
+	text-decoration: none;	
+}
+
+.enviar {
+    background: #ddd;
+    color:#24a4c6;
+}
+
+.reset {
+    background: transparent;
+    border: 1px solid #ccc;
+    color:#24a4c6;
+    margin-left: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>CONTACTO</h1>
+	
+    <div class="linha"></div>
+
+    <form>
+        <div class="form-group">
+            <div>
+                <label>NOME</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label>E-MAIL</label>
+                <input type="email" required>
+            </div>
+        </div>
+
+        <div>
+            <label>MENSAGEM</label>
+            <textarea required></textarea>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="enviar">ENVIAR MENSAGEM</button>
+            <button type="reset" class="reset">RESET</button>
+				<a class="botao"href="index.html">ANTERIOR</a>
+        </div>
+				
+    </form>
+</div>
+
+</body>
+</html>
